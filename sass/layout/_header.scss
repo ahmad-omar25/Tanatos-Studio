@@ -1,0 +1,96 @@
+/* Start Header */ 
+
+.header
+{
+    background: url('../img/header/3.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    .overlay 
+    {
+        padding-top: 170px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .5);
+    }
+    .head-info 
+    {
+        h1 
+        {
+            font-size: 45px;
+            letter-spacing: 1.7px;
+            font-weight: bold;
+            @media (max-width: $maxMobile)
+            {
+                font-size: 35px;
+            }
+            span 
+            {
+                color: $firstColor;
+            }
+        }
+        p 
+        {
+            font-size: 17px;
+            color: #ccc;
+            @media (max-width: $maxMobile)
+            {
+                font-size: 15px;
+            }
+        }
+    }
+    .head-button 
+    {
+        padding: 20px;
+        button 
+        {
+            @extend %button;
+            margin: 10px 5px;
+            padding: 10px 0;
+            width: 180px;
+            background-color: transparent;
+            border: 1px solid #909090;
+            color: #fff;
+            border-radius: 10px;
+            &:hover
+            {
+                background-color: $firstColor;
+                color: #fff;
+                border: 1px solid $firstColor;
+            }
+        }
+    }
+    .arrow
+    {
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 10px;
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        margin: 100px 0;
+        color: #ccc;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        @media (max-width: $maxMobile)
+        {
+            margin: 50px 0;
+        }
+        &:hover 
+        {
+            background-color: $firstColor;
+            border: 1px solid $firstColor;
+        }
+    }
+}
+
+/* End Header */ 

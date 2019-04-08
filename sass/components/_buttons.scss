@@ -1,0 +1,10 @@
+%button 
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+    &:hover
+    {
+        color: #fff;
+    }
+}

@@ -1,0 +1,41 @@
+/* Start Navbar */ 
+
+.navbar 
+{
+    background-color: #08080800;
+    border-color: #08080800; 
+    .navbar-brand
+    {
+        font-weight: bold;
+        color: #fff;
+        font-size: 20px;
+        span 
+        {
+            color: $firstColor;
+        }
+    }
+    .navbar-nav>li>a
+    {
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+    @media (max-width: 991px)
+    {
+        text-transform: none;
+        letter-spacing: 0;
+    }
+    &:hover
+    {
+        color: $firstColor;
+    }
+    }
+}
+.scrolled 
+{
+    background-color: rgba(0, 0, 0, .65);
+    padding: 5px 0;
+}
+
+/* End Navbar */ 

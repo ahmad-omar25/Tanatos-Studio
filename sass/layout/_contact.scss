@@ -1,0 +1,91 @@
+/* Start Conatct Us */ 
+
+.contact-us
+{
+    background: url(../img/contact/3.jpg) no-repeat top center;
+    background-size: cover; 
+    padding: 0;
+    .overlay 
+    {
+        @extend %overlay;
+    }
+    .person 
+    {
+        padding: 50px 0;
+        h2 
+        {
+            color: #fff;
+        }
+        form 
+        {
+            width: 70%;
+            display: inline-block;
+            @media (max-width: 991px)
+            {
+                width: 100%;
+            }
+            .info 
+            {
+                input 
+                {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .message 
+        {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-bottom: 10px;
+        }
+        .social 
+        {
+            padding-right: 15px;
+            padding-left: 15px;
+            .btn 
+            {
+                padding: 10px;
+                width: 170px;
+                float: left;
+                color: #ccc;
+                text-transform: uppercase;
+                background-color: transparent;
+                border: 1px solid #ccc;
+                transition: all .4s ease-in-out;
+                color: #fff;
+                &:hover 
+                {
+                    background-color: $firstColor;
+                    border: 1px solid $firstColor;
+                    color: #fff;
+                }
+            }
+            i 
+            {
+                float: right;
+                margin: 5px 10px 15px;
+                color: #fff;
+                width: 35px;
+                height: 35px;
+                line-height: 37px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .fa-facebook
+            {
+                background-color: #3b5998;
+            }
+            .fa-twitter
+            {
+                background-color: #55acee;
+            }
+            .fa-google-plus
+            {
+                background-color: #dc4e41;
+            }
+        }
+    }
+
+}
+
+/* Start Conatct Us */ 
